@@ -1,6 +1,6 @@
 modLoader = "javafml"
-loaderVersion = "[2,)"
-#issueTrackerURL = ""
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/CreeperHost/BackupManager/issues"
 license = "BSD 4-Clause License"
 
 [[mods]]
@@ -15,14 +15,14 @@ description = '''
 [[dependencies.backupmanager]]
 modId = "neoforge"
 type="required"
-versionRange = "[20,)"
+versionRange = "[21.0.0-beta,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.backupmanager]]
 modId = "minecraft"
 type="required"
-versionRange = "[1.20.4,)"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
@@ -36,7 +36,7 @@ side = "BOTH"
 [[dependencies.backupmanager]]
 modId = "polylib"
 type="required"
-versionRange = "[2004.0.3,)"
+versionRange = "[13.0.1,)"
 ordering = "AFTER"
 side = "BOTH"
 
