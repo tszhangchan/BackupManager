@@ -36,7 +36,13 @@ public class VanillaBackupProvider implements BackupProvider {
             if (!fileName.contains("_")) continue;
             int i = fileName.indexOf("_");
             int dateEnd = fileName.indexOf("_", i + 1);
-            if (dateEnd == -1 || fileName.length() <= dateEnd + 1) continue;
+            String name;
+            if (dateEnd == -1 || fileName.length() <= dateEnd + 1) {
+                dateEnd = fileName.length();
+                name = fileName;
+            } else {
+                name = fileName.substring(dateEnd + 1).replace(".zip", "");
+            }
 
             long timestamp;
             try {
@@ -45,7 +51,6 @@ public class VanillaBackupProvider implements BackupProvider {
                 continue;
             }
 
-            String name = fileName.substring(dateEnd + 1).replace(".zip", "");
             results.add(new VanillaBackup(file.toAbsolutePath().toString(), name, timestamp));
         }
 
