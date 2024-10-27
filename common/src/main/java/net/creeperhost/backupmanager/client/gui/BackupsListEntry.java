@@ -41,7 +41,7 @@ public class BackupsListEntry extends WorldSelectionList.Entry {
 
     @Override
     public void render(GuiGraphics graphics, int index, int yPos, int xPos, int width, int height, int mouseX, int mouseY, boolean mouseOverEntry, float partialTicks) {
-        GuiRender render = new GuiRender(Minecraft.getInstance(), graphics.pose(), graphics.bufferSource());
+        GuiRender render = GuiRender.convert(graphics);
 
         Rectangle bounds = Rectangle.create(xPos, yPos, width, 18);
         mouseOver = bounds.contains(mouseX, mouseY);
