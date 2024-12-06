@@ -4,7 +4,7 @@
   "backupmanager:gui.backups.provider" : "备份来源: %s",
   "backupmanager:gui.backups.restore_name" : "请输入世界名，选择世界页面将显示该名称",
   "backupmanager:gui.backups.error_occurred" : "错误！\n\n%s",
-  "backupmanager:gui.backups.restored" : "成功重载备份",
+  "backupmanager:gui.backups.restored" : "成功还原备份",
   "backupmanager:gui.backups.file_location" : "文件位置：",
 
   "backupmanager:button.backups" : "世界备份",
